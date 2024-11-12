@@ -1,4 +1,13 @@
-# Get Started
+# Update
+As of November 2024, we've made the extremely difficult decision to transition from Godot but we have exciting things in store. Check out our "Thank You & Technical Reflections" below.
+
+Our V2 announcement will first be on Discord: https://themirror.space/discord
+
+After the V2 announcement, this existing code based will be moved to /mirror-classic in our repo and "Mirror Classic" will refer to the Godot code. Mirror Classic will remain permissively MIT-licensed and the V2 will also have an open-source core.
+
+[![Video: Transitioning from Godot: Thank You and Technical Reflections](https://img.youtube.com/vi/n_kkiNqAwIU/0.jpg)](https://youtu.be/n_kkiNqAwIU)
+
+# Mirror Classic: Get Started
 
 The **easiest** way is via our compiled Mirror Official app: [Get Started](https://docs.themirror.space/docs/get-started)
 
