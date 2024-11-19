@@ -155,7 +155,7 @@ jobs:
             target: editor
             tests: false
             strip: true
-            sconsflags: debug_symbols=no optimize=speed production=yes
+            sconsflags: debug_symbols=no optimize=speed production=yes use_static_cpp=yes
             dist-app: "macos_tools.app"
             packaged-app: "MirrorGodotEditorMac.app"
             bin-name: "godot.macos.editor.universal"
@@ -170,7 +170,7 @@ jobs:
             target: template_debug
             tests: false
             strip: true
-            sconsflags: debug_symbols=no optimize=speed
+            sconsflags: debug_symbols=no optimize=speed use_static_cpp=yes
             dist-app: "macos_template.app"
             packaged-app: "macos_template.app"
             bin-name: "godot.macos.template_debug.universal"
@@ -292,7 +292,7 @@ jobs:
           - name: Linux Editor
             cache-name: linux-editor
             target: editor
-            sconsflags: arch=x86_64 debug_symbols=yes optimize=speed_trace
+            sconsflags: arch=x86_64 debug_symbols=yes optimize=speed_trace use_static_cpp=yes
             strip: false
             bin: "./bin/godot.linuxbsd.editor.x86_64"
             artifact-name: "MirrorGodotEditorLinux.x86_64"
@@ -304,7 +304,7 @@ jobs:
             cache-name: linux-template
             target: template_debug
             strip: true
-            sconsflags: arch=x86_64 debug_symbols=no optimize=speed
+            sconsflags: arch=x86_64 debug_symbols=no optimize=speed use_static_cpp=yes
             bin: "./bin/godot.linuxbsd.template_debug.x86_64"
             artifact-name: "linux_release.x86_64"
             artifact: true
@@ -407,7 +407,7 @@ jobs:
             cache-name: android-template
             target: template_debug
             strip: true
-            sconsflags: debug_symbols=no optimize=speed
+            sconsflags: debug_symbols=no optimize=speed use_static_cpp=yes
             bin: "./bin/godot.linuxbsd.template_debug.x86_64"
             artifact-name: "android-template"
             artifact: true
